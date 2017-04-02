@@ -1,0 +1,7 @@
+{
+    "a" : "a.json",
+    "b" : "./b.json",
+    "c" : "Clave c",
+    "d" : "d.json",
+    "e" : "/tmp/e.json"
+}
