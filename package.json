@@ -1,9 +1,9 @@
 {
-    "version"      : "0.1.0",
-    "name"         : "jf-json-parse",
-    "author"       : "Joaquín Fernández",
-    "description"  : "Parse a JSON file replacing all files included with their contents.",
-    "keywords"     : [
+    "version": "1.1.0",
+    "name": "@jf/json-parse",
+    "author": "Joaquín Fernández",
+    "description": "Parse a JSON file replacing all files included with their contents.",
+    "keywords": [
         "import",
         "imports",
         "json",
@@ -13,13 +13,17 @@
         "requires",
         "resolve"
     ],
-    "license"      : "MIT",
-    "homepage"     : "http://www.joaquinfernandez.net",
-    "repository"   : {
-        "type" : "git",
-        "url"  : "https://github.com/joaquinfq/jf-json-parse"
+    "license": "MIT",
+    "homepage": "http://www.joaquinfernandez.net",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/joaquinfq/jf-json-parse"
     },
-    "scripts"      : {
-        "test" : "node test/test.js"
+    "scripts": {
+        "test": "nyc --reporter=text --all --include=index.js jf-tests"
+    },
+    "devDependencies": {
+        "@jf/tests": "0.0.4",
+        "nyc": "^13.3.0"
     }
 }
